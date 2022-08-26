@@ -24,11 +24,18 @@ public class Main {
                 if(ch==1){
                     op.viewBalance();
                 } else if (ch==2) {
+                    System.out.println("Enter the amount to withdraw!");
+                    double withdrawAmount = in.nextDouble();
+                    op.withdrawAmount(withdrawAmount);
 
                 } else if (ch==3) {
 
-                } else if (ch==4) {
+                    System.out.println("Enter the Amount to deposit");
+                    double depositAmount = in.nextDouble();
+                    op.depositAmount(depositAmount);
 
+                } else if (ch==4) {
+                    op.viewMiniStatement();
                 } else if (ch==5) {
                     System.out.println("Collect Your Atm card\n Thanks for using the ATM Machine");
                     System.exit(0);

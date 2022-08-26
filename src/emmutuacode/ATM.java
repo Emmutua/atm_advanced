@@ -1,7 +1,7 @@
 package emmutuacode;
 
 public class ATM {
-    private double balance = 1000;
+    private double balance;
     private double depositAmount;
     private double withdrawAmount;
 
